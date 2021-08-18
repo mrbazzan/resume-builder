@@ -1,0 +1,269 @@
+
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body %}
+<nav id="navbar">
+    <ul>
+        <li id="navbar-home" class="active"><a href="#welcome-section">Home</a></li>
+        <li id="navbar-about"><a href="#about">About</a></li>
+        <li id="navbar-contact"><a href="#contact">Contact</a></li>
+        <li id="navbar-resume"><a href="https://drive.google.com/file/d/1HFt4in7N5QQdWc6M0AqIXxrdiWx0rIhu/view?usp=sharing" target="_blank">Resume</a></li>
+    </ul>
+</nav>
+
+<section id="welcome-section" class="textcenter">
+    <h1>Abdulwasiu Apalowo</h1>
+    <br>
+    <img src="" alt="Abdulwasiu's passport" class="imagecenter">
+    <small><i>A Software Engineer and Open Source Contributor</i></small>
+</section>
+
+<section id="about">
+    <div>
+        <p>Hello! My name is Abdulwasiu, and I'm a Software Developer. I develop
+            back-end web applications and API with Python(Django and Flask).
+            I enjoy reading novels, playing chess and sports(American Football and Basketball).
+            I also really enjoy contributing to open source projects.
+        </p>
+    </div>
+    <div>
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Flask</li>
+            <li>Technical Writing</li>
+            <li>Javascript --> jQuery</li>
+            <li>Git</li>
+            <li>Testing</li>
+            <li>CI/CD(Github Actions)</li>
+        </ul>
+    </div>
+    <div>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <ul>
+            <li><a href="https://zuri.team/" target="_blank">Zuri Team</a>— Web Developer</li>
+            <li><a href="https://hamoye.com" target="_blank">Hamoye</a>— Data Science Intern</li>
+            <li><a href="https://labs.covenworks.com/" target="_blank">Coven Labs</a>— Machine Learning Intern</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="setsize">
+        <div class="innersetsize item1">
+            <div class="upperdiv">
+                <b><a href="https://baz-django-blog.herokuapp.com/" target="_blank">Blog Site</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A blog website where users can sign in and post content. Other registered users can
+                comment on a post.</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/zuri-blog" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; Django &nbsp;</small>
+                </div>
+            </div>
+        </div>
+        <div class="innersetsize item2">
+            <div class="upperdiv">
+                <b><a href="https://stocka-be.herokuapp.com/" target="_blank">Stocka</a></b>
+            </div>
+            <div class="middlediv">
+                <p>Authentication API for STOCKA(an inventory management system).</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/stocka-be" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; Django Rest Framework &nbsp;</small>
+                </div>
+            </div>
+        </div>
+<!--            <div class="innersetsize item3">-->
+<!--                <div class="upperdiv">-->
+<!--                    <b></b>-->
+<!--                </div>-->
+<!--                <div class="middlediv">-->
+
+<!--                </div>-->
+<!--                <div class="bottomdiv">-->
+<!--                    <div class="leftend">-->
+<!--                        <a href="" target="_blank">Github URL</a>-->
+<!--                    </div>-->
+<!--                    <div class="rightend">-->
+<!--                        <small> &nbsp;  &nbsp;  &nbsp;  &nbsp;</small>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        <div class="innersetsize item4">
+            <div class="upperdiv">
+                <b><a>Airbnb Profile Ranking System</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A Ranking system for Melbourne based Airbnb users.
+                    It returns a users rank in relation with other Airbnb users in Melbourne, Australia.
+                </p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/scraper" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; BeautifulSoup &nbsp; Selenium &nbsp;</small>
+                </div>
+            </div>
+        </div>
+        <div class="innersetsize item5">
+            <div class="upperdiv">
+                <b><a href="https://github.com/mrbazzan/chat-app/blob/main/README.md#how-it-works" target="_blank">CHAT APPLICATION</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A real time chat application where users in a group receive messages as it's sent by other users.</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/chat-app" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Django &nbsp; AJAX jQuery &nbsp;</small>
+                </div>
+            </div>
+        </div>
+        <div class="innersetsize item6">
+            <div class="upperdiv">
+                <b><a>Image Viewer</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A GUI app that can be used to view pictures.</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/image-viewer" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; Tkinter &nbsp; Pillow &nbsp;</small>
+                </div>
+            </div>
+        </div>
+        <div class="innersetsize item7">
+            <div class="upperdiv">
+                <b><a href="https://ex-blogg.herokuapp.com/">Blog</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A blog website where users can sign in and post content.</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/baz-blog" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; Flask &nbsp;</small>
+                </div>
+            </div>
+        </div>
+        <div class="innersetsize item8">
+            <div class="upperdiv">
+                <b><a href="https://check-weatherapp.herokuapp.com" target="_blank">Weather App</a></b>
+            </div>
+            <div class="middlediv">
+                <p>A web app that checks weather in a city</p>
+            </div>
+            <div class="bottomdiv">
+                <div class="leftend">
+                    <a href="https://github.com/mrbazzan/weather-app" target="_blank">Github URL</a>
+                </div>
+                <div class="rightend">
+                    <small>Python &nbsp; Flask &nbsp; OpenWeatherMap API &nbsp;</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>OPEN SOURCE CONTRIBUTIONS</h2>
+
+    <div class="open-source">
+        <ul>
+            <li class="source">
+                <b><a href="https://github.com/EndlessTrax/pyanchor" target="_blank">PyAnchor.</a></b>
+
+                <h6>A python package for finding broken links on a webpage.</h6>
+
+                <ul>
+                    <li>I <a href="https://github.com/EndlessTrax/pyanchor/pull/25" target="_blank">wrote</a> the documentation for the command line usage.</li>
+                    <li>I also <a href="https://github.com/EndlessTrax/pyanchor/pull/26" target="_blank">added</a> link-analysis feature to the command line.</li>
+                </ul>
+            </li>
+            <hr>
+            <li class="source">
+                <b><a href="https://pypi.org/project/pynation/" target="_blank">PyNation.</a></b>
+
+                <h6>A PyPI(Python Package Index) project for finding information about a country.</h6>
+                <ul>
+                    <li>I am the <a href="https://github.com/mrbazzan/pynation" target="_blank">creator</a> of this project.</li>
+<!--                        <li>I <a href="" target="_blank"></a>.</li>-->
+                </ul>
+            </li>
+            <hr>
+        </ul>
+    </div>
+</section>
+
+<div class="help-needed">
+    <p> I am actively searching for backend development roles with Python.
+    If you're hiring, <a href="mailto:abdulwasiuapalowo@gmail.com">please get in touch</a></p>
+</div>
+
+<section id="contact">
+    <h2>CONTACT</h2>
+    <div>
+        <div class="contact-details">
+            <div class="left">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </div>
+            <div class="right">
+                <a href="https://github.com/mrbazzan" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <div class="left">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <div class="right">
+                <a href="https://www.linkedin.com/in/abdulwasiu-apalowo" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <div class="left">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <div class="right">
+                <a href="tel:+234 701 127 2041" target="_blank">+234 701 127 2041</a>
+            </div>
+        </div>
+
+        <div class="contact-details">
+            <div class="left">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="right">
+                <a href="mailto:abdulwasiuapalowo@gmail.com" target="_blank">abdulwasiuapalowo@gmail.com</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer textcenter">
+    <p>© Created by <a href="#navbar">Bazzan</a>|2021</p>
+</footer>
+{% endblock %}

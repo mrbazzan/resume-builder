@@ -1,0 +1,395 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI Light", Calibri;
+    background-color: white;
+    font-size: 100%;
+}
+
+section {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+h1, h2, h3 {
+    color: green;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 35px;
+}
+
+small {
+    text-shadow: 0.2px 0.2px black;
+    color: lightgrey;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+#welcome-section{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#about{
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+img {
+    max-width: 35%;
+    border-style: none;
+    border-radius: 60%;
+}
+
+.imagecenter {
+    display: block;
+    margin: 0 auto;
+}
+
+section a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+section a:hover {
+    color: green;
+}
+
+section#about div p {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 30px;
+    word-spacing: 0.2px;
+    text-indent: 35px;
+}
+
+section ul {
+    line-height: 30px;
+}
+
+div.innersetsize b {
+    font-size: 30px;
+}
+
+.setsize {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.innersetsize {
+    border-radius: 8px;
+    border-bottom: 3px solid lightgreen;
+    margin: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+.bottomdiv {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftend {
+    align-self: flex-start;
+    flex: 1.7;
+    font-family: "Lucida Sans Unicode";
+    font-size: 15px;
+}
+
+.leftend a:link, .leftend a:visited {
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.leftend a:hover, .leftend a:visited {
+    background-color: green;
+}
+
+.rightend {
+    align-self: baseline;
+    flex: 3.4;
+    text-align: right;
+}
+
+.upperdiv {
+    padding-left: 10px;
+}
+
+.middlediv p {
+    text-align: center;
+    font-family: Verdana;
+}
+
+.item1 {
+    order: 1;
+}
+
+.item2 {
+    order: 2;
+}
+
+.item3 {
+    order: 3;
+}
+
+.item4 {
+    order: 4;
+}
+
+.item5 {
+    order: 5;
+}
+
+.item6 {
+    order: 7;
+}
+
+.item7 {
+    order: 8;
+}
+
+.item8 {
+    order: 6;
+}
+
+/* @media all and (min-width: 600px) {
+
+    .setsize {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item1 {
+        order: 1;
+        width: 10rem;
+        height: 17rem;
+    }
+
+    .item2 {
+        order: 3;
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .item3 {
+        order: 2;
+        width: 15rem;
+        height: 17rem;
+    }
+
+    .item4 {
+        order: 4;
+        width: 15rem;
+        height: 17rem;
+    }
+
+    .item5 {
+        order: 5;
+        width: 15rem;
+        height: 11rem;
+    }
+
+    .item6 {
+        order: 7;
+        width: 10rem;
+        height: 12rem;
+    }
+
+    .item7 {
+        order: 8;
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .item8 {
+        order: 6;
+        width: 10rem;
+        height: 13rem;
+    }
+
+}
+*/
+
+@media all and (min-width: 900px) {
+
+    .setsize {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .item1 {
+        order: 1;
+        width: 25rem;
+        height: 11rem;
+    }
+
+    .item2 {
+        order: 2;
+        width: 25rem;
+        height: 11rem;
+    }
+
+    .item3 {
+        order: 3;
+        width: 51rem;
+        height: 10rem;
+    }
+
+    .item4 {
+        order: 4;
+        width: 51rem;
+        height: 10rem;
+    }
+
+    .item5 {
+        order: 5;
+        width: 25rem;
+        height: 11rem;
+    }
+
+    .item6 {
+        order: 8;
+        width: 25rem;
+        height: 10rem;
+    }
+
+    .item7 {
+        order: 7;
+        width: 25rem;
+        height: 10rem;
+    }
+
+    .item8 {
+        order: 6;
+        width: 25rem;
+        height: 11rem;
+    }
+
+}
+
+.open-source b a {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.open-source h6 {
+    margin: 5px;
+    text-indent: 15px;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+.open-source p {
+    margin: 15px;
+}
+
+.source {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.fas, .fab {
+    color: lightgreen;
+    font-family: 'Segoe UI Light'
+}
+
+.help-needed {
+    margin-top: 3rem;
+    text-align: center;
+    text-indent: 15px;
+}
+
+.help-needed a{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+
+#contact {
+    background-color: #222222;
+    margin: 0px;
+    margin-bottom: -1.0rem;
+}
+
+#contact h2{
+    margin: 2px 5% 1.5rem 5%;
+}
+
+.contact-details {
+    display: flex;
+    margin: 0 8% 1rem 8%;
+    padding: 2px;
+}
+
+.left {
+    order: 1;
+    flex: 1;
+}
+
+.right {
+    order: 2;
+    flex: 8;
+}
+
+.footer {
+    background-color: #111111;
+    color: white;
+    padding: 6rem;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+}
