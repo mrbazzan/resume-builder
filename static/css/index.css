@@ -74,16 +74,19 @@ nav li a:hover:not(.active) {
     text-align: center;
 }
 
-img {
+.passport{
     max-width: 35%;
     border-style: none;
     border-radius: 60%;
+    display: block;
+    margin: auto;
 }
 
 .imagecenter {
     display: block;
     margin: 0 auto;
 }
+
 
 section a {
     text-decoration: none;
@@ -198,73 +201,13 @@ div.innersetsize b {
     order: 6;
 }
 
-/* @media all and (min-width: 600px) {
-
-    .setsize {
-        display: flex;
-        text-align: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .item1 {
-        order: 1;
-        width: 10rem;
-        height: 17rem;
-    }
-
-    .item2 {
-        order: 3;
-        width: 10rem;
-        height: 13rem;
-    }
-
-    .item3 {
-        order: 2;
-        width: 15rem;
-        height: 17rem;
-    }
-
-    .item4 {
-        order: 4;
-        width: 15rem;
-        height: 17rem;
-    }
-
-    .item5 {
-        order: 5;
-        width: 15rem;
-        height: 11rem;
-    }
-
-    .item6 {
-        order: 7;
-        width: 10rem;
-        height: 12rem;
-    }
-
-    .item7 {
-        order: 8;
-        width: 10rem;
-        height: 13rem;
-    }
-
-    .item8 {
-        order: 6;
-        width: 10rem;
-        height: 13rem;
-    }
-
-}
-*/
-
 @media all and (min-width: 900px) {
 
     .setsize {
         display: flex;
         text-align: center;
         flex-direction: row;
+
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -381,6 +324,18 @@ div.innersetsize b {
 .right {
     order: 2;
     flex: 8;
+}
+
+.form {
+    margin-bottom: 10px;
+}
+
+#id_email {
+    padding-right: 31px;
+}
+
+label, input {
+    color: lightgreen;
 }
 
 .footer {

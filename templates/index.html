@@ -7,16 +7,22 @@
     <ul>
         <li id="navbar-home" class="active"><a href="#welcome-section">Home</a></li>
         <li id="navbar-about"><a href="#about">About</a></li>
-        <li id="navbar-contact"><a href="#contact">Contact</a></li>
         <li id="navbar-resume"><a href="https://drive.google.com/file/d/1HFt4in7N5QQdWc6M0AqIXxrdiWx0rIhu/view?usp=sharing" target="_blank">Resume</a></li>
+        <li>
+            <a class=" chariti-orig-logo" href="https://ingressive.org/">
+                <img src="https://ingressive.org/wp-content/uploads/2020/05/I4G-Logo-Color-Cropped.png" alt="" width="130" height="17" title="I4G Logo Color Cropped">
+            </a>
+        </li>
     </ul>
 </nav>
 
 <section id="welcome-section" class="textcenter">
+
+
+
     <h1>Abdulwasiu Apalowo</h1>
-    <br>
-    <img src="{% static 'favicon/Linkedin passport.jpg' %}" alt="Abdulwasiu's passport" class="imagecenter">
     <small><i>A Software Engineer and Open Source Contributor</i></small>
+
 </section>
 
 <section id="about">
@@ -174,15 +180,11 @@
 
 <div class="help-needed">
     <p> I am actively searching for backend development roles with Python.
-    If you're hiring, <a href="mailto:abdulwasiuapalowo@gmail.com">please get in touch</a></p>
+    If you're hiring, please get in touch</p>
 </div>
 
-<form>
-
-</form>
-
-<section id="contact">
-    <h2>CONTACT</h2>
+<section>
+<h2>CONTACT</h2>
     <div>
         <div class="contact-details">
             <div class="left">
@@ -210,18 +212,25 @@
                 <a href="tel:+234 701 127 2041" target="_blank">+234 701 127 2041</a>
             </div>
         </div>
-
-        <div class="contact-details">
-            <div class="left">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-            </div>
-            <div class="right">
-                <a href="mailto:abdulwasiuapalowo@gmail.com" target="_blank">abdulwasiuapalowo@gmail.com</a>
-            </div>
-        </div>
-
     </div>
+
+
+<form method="post" class="form">
+    {% csrf_token %}
+    <p>
+        <label id="id_email" for="id_mail">Mail:</label>
+        <input type="text" name="mail" id="id_mail">
+    </p>
+    <p>
+        <label for="id_message">Message:</label>
+        <textarea name="message" cols="40" rows="10" id="id_message"></textarea>
+    </p>
+    <input type="submit" value="Send">
+</form>
+
 </section>
+
+
 
 <footer class="footer textcenter">
     <p>© Created by <a href="#navbar">Bazzan</a>|2021</p>
