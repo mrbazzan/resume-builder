@@ -316,6 +316,18 @@ div.innersetsize b {
     padding: 2px;
 }
 
+.contact-details > div > a {
+    color: black;
+}
+
+.contact-details > div > a:hover {
+    color: lightgreen;
+}
+
+label {
+    color: lightgreen;
+}
+
 .left {
     order: 1;
     flex: 1;
@@ -331,12 +343,13 @@ div.innersetsize b {
 }
 
 #id_email {
-    padding-right: 31px;
+    margin-left: 22px;
 }
 
-label, input {
-    color: lightgreen;
+.id_subject {
+    padding-right: 10px;
 }
+
 
 .footer {
     background-color: #111111;

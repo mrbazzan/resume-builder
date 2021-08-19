@@ -17,9 +17,6 @@
 </nav>
 
 <section id="welcome-section" class="textcenter">
-
-
-
     <h1>Abdulwasiu Apalowo</h1>
     <small><i>A Software Engineer and Open Source Contributor</i></small>
 
@@ -217,13 +214,17 @@
 
 <form method="post" class="form">
     {% csrf_token %}
+
+    {{ form.label_tag }} {{ form.as_p }}
+
     <p>
-        <label id="id_email" for="id_mail">Mail:</label>
-        <input type="text" name="mail" id="id_mail">
+        <label class="id_subject" for="id_subject">Subject:</label>
+        <input type="text" name="subject" id="id_subject" autocomplete="off">
     </p>
+
     <p>
         <label for="id_message">Message:</label>
-        <textarea name="message" cols="40" rows="10" id="id_message"></textarea>
+        <textarea name="message" cols="40" rows="10" id="id_message" autocomplete="off"></textarea>
     </p>
     <input type="submit" value="Send">
 </form>
