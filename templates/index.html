@@ -216,35 +216,28 @@
     <p><strong>{{ error_message }}</strong></p>
 {% endif %}
 
-<form method="post" class="form">
+<form method="POST" id="form" action="">
     {% csrf_token %}
 
     {{ form.label_tag }} {{ form.as_p }}
 
     <p>
         <label class="id_subject" for="id_subject">Subject:</label>
-        <input type="text" name="subject" id="id_subject" autocomplete="off">
+        <input type="text" name="subject" id="id_subject" required autocomplete="off">
     </p>
 
     <p>
         <label for="id_message">Message:</label>
-        <textarea name="message" cols="40" rows="10" id="id_message" autocomplete="off"></textarea>
+        <textarea name="message" cols="40" rows="10" id="id_message" required autocomplete="off"></textarea>
     </p>
-    <input id="send" type="submit" value="Send">
-
-    <script src="{% static 'error.js' %}" type="text/js"></script>
+    <input type="submit" value="Send">
 
 </form>
+
 </section>
 
 <footer class="footer textcenter">
     <p>© Created by <a href="#navbar">Bazzan</a>|2021</p>
 </footer>
-
-{% endblock %}
-
-{% block js %}
-
-
 
 {% endblock %}
