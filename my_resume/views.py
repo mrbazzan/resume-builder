@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.urls import reverse
 from django import forms
+from .models import ContactMe
+from django.http import HttpResponseRedirect
 
 
 class EmailForm(forms.Form):
@@ -15,15 +17,18 @@ class EmailForm(forms.Form):
 def index(request):
 
     if request.method == 'POST':
-        mail = request.POST.get('mail')
+        mail = request.POST.get('email')
         subject = request.POST.get('subject')
         message = request.POST.get('message')
 
         if subject == '' or message == '':
-            pass
-            # TODO: find something to do here
-            # todo: The database stuff too.
+            return redirect(reverse('index'))
         else:
+            ContactMe.objects.create(
+                email=mail,
+                subject=subject,
+                message=message,
+            )
             send_mail(
                 subject,
                 message,
@@ -31,8 +36,9 @@ def index(request):
                 ['donbazzan@gmail.com'],
                 fail_silently=False,
             )
-        return redirect(reverse('index'))
+
+            return redirect(reverse('index'))
 
     return render(request, "index.html", {
-        'form': EmailForm()
+        'form': EmailForm(),
     })

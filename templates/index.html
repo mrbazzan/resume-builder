@@ -212,6 +212,10 @@
     </div>
 
 
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
+
 <form method="post" class="form">
     {% csrf_token %}
 
@@ -226,14 +230,21 @@
         <label for="id_message">Message:</label>
         <textarea name="message" cols="40" rows="10" id="id_message" autocomplete="off"></textarea>
     </p>
-    <input type="submit" value="Send">
+    <input id="send" type="submit" value="Send">
+
+    <script src="{% static 'error.js' %}" type="text/js"></script>
+
 </form>
-
 </section>
-
-
 
 <footer class="footer textcenter">
     <p>© Created by <a href="#navbar">Bazzan</a>|2021</p>
 </footer>
+
+{% endblock %}
+
+{% block js %}
+
+
+
 {% endblock %}
