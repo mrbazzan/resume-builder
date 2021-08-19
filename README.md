@@ -8,4 +8,4 @@
     > python print_name.py
     ```
    
-2) Backend track: [Hosted Resume](https://django-resume.herokuapp.com)
+2) Backend track: [Hosted Resume](https://baz-django-resume.herokuapp.com/)
