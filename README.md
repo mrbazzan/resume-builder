@@ -10,4 +10,7 @@
    
 2) Backend track: [Hosted](https://baz-django-resume.herokuapp.com/)
 
+
+NB: The project was hosted on HEROKU
+
 ### Internship Test 2
